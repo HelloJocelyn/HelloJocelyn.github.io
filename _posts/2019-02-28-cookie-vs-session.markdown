@@ -4,10 +4,10 @@ title:  "cookie vs session"
 date:   2021-04-15 13:08:04 +0900
 categories: web
 ---
-[](#Cookie "Cookie")Cookie
+Cookie
 --------------------------
 
-### [](#概念：用来（长时间存储数据）存储数据。 "概念：用来（长时间存储数据）存储数据。")概念：用来（长时间存储数据）存储数据。
+### 概念：用来（长时间存储数据）存储数据。
 
 1.  cookie存储以域名方式分隔；
 2.  cookie数据可以设置名字，值，域名，path,过期时间，大小等
@@ -15,7 +15,7 @@ categories: web
 4.  单个cookie保存的数据大小不能超过4K。
 5.  每种浏览器cookie存储文件地址不一样。chrome地址为%LOCALAPPDATA%/Google/Chrome/User Data/Default/下的Cookie文件。
     
-    ### [](#cookie属性详解： "cookie属性详解：")cookie属性详解：
+    ### cookie属性详解：
     
 
 *   Name:
@@ -28,13 +28,13 @@ categories: web
 *   Secure: 表示该cookie只能用https传输。一般用于包含认证信息的cookie，要求传输此cookie的时候，必须用https传输。
 *   SameSite: 两个值：Strict（严格的）和Lax（宽松的）。当为严格模式时，表明禁止第三方模式。比如如果天猫页面设置为Strict后，从天猫页面访问淘宝则不是登录状态。
 
-### [](#Cookie的缺陷 "Cookie的缺陷")Cookie的缺陷
+### Cookie的缺陷
 
 *   cookie会被附加在每个HTTP请求中，所以无形中增加了流量。
 *   由于在HTTP请求中的cookie是明文传递的，所以安全性成问题。（除非用HTTPS)
 *   Cookie的大小限制在4KB左右。对于复杂的存储需求来说是不够用的。
     
-    ### [](#cookie存储 "cookie存储")cookie存储
+### cookie存储
     
     每种浏览器cookie存储文件地址不一样。chrome地址为%LOCALAPPDATA%/Google/Chrome/User Data/Default/下的Cookie文件。  
     打开chrome的Cookie文件，看到是sqllite的数据库文件，使用sqllite database browser打开该数据库文件。可以看到下面数据。
@@ -46,36 +46,36 @@ categories: web
 
 可以看到value数据为空，但是多了个encrypted\_value. 浏览器会把比较重要的信息例如自动登录的账号密码以及各种 token 等信息加密存放到此字段中，在发送请求的时候浏览器会将此字段解密，作为请求发给服务器.(然而这个很容易就被人破解，唉)
 
-### [](#后端实现 "后端实现")后端实现
+### 后端实现
 
 增加请求头“Set-Cookie”的方式。  
 发到浏览器端后，浏览器自动识别set-cookie并存储。
 
-### [](#前端实现 "前端实现")前端实现
+### 前端实现
 
 1.  前端不能直接操作set-cookie
 
-[](#Session "Session")Session
+Session
 -----------------------------
 
-### [](#概念 "概念")概念
+### 概念
 
 session机制是一种服务器端的机制，服务器使用一种类似于散列表的结构（也可能就是使用散列表）来保存信息。  
 客户端初次请求服务端，服务端会为客户端创建一个session，并将该sessionId存入客户端cookie中。下次访问可凭此sessionId来获取session。当cookie被禁止时，也可以将sessionId附在url中，或者通过隐式表单实现。  
 因为session存储在服务器，所以只能服务器才会删除session数据。而浏览器是不会通知服务器去删除的。那么我们通常说的“只要关闭浏览器，session就消失了“又是什么情况呢。这个其实是因为关闭浏览器，存储sessionId的cookie会被删除。则自然无法在服务器上找到对应的session。
 
-### [](#session的作用 "session的作用")session的作用
+### session的作用
 
-### [](#session的后台实现 "session的后台实现")session的后台实现
+### session的后台实现
 
-### [](#session在服务器间传递 "session在服务器间传递")session在服务器间传递
+### session在服务器间传递
 
 webstorage  
 localStorage  
 sessionStorage
 
-[](#跨域问题 "跨域问题")跨域问题
+跨域问题
 --------------------
 
-[](#服务间共享 "服务间共享")服务间共享
+服务间共享
 -----------------------
