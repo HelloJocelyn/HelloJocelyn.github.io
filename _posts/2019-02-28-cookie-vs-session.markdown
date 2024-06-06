@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "cookie vs session"
 date:   2021-04-15 13:08:04 +0900
 categories: web

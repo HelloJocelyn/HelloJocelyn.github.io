@@ -1,8 +1,16 @@
 ---
-layout: post
+layout: posts
 title:  "Springboot source code learning"
 date:   2021-04-15 13:08:04 +0900
-categories: spring
+categories: 
+  - spring
+header:
+  image: https://www.flickr.com/photos/joeallenphotog/53769521299/in/explore-2024-06-05/
+tags:
+  - edge case
+  - featured image
+  - image
+  - layout
 ---
 
 初始化SpringApplication

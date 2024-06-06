@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "How network works"
 date:   2024-01-17 00:00:00 +0900
 categories: network
