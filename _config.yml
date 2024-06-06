@@ -28,9 +28,11 @@ twitter_username:
 github_username:
 
 # Build settings
-theme: minima
+# theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
