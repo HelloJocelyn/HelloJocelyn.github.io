@@ -1,8 +1,12 @@
 ---
-layout: posts
+layout: single
 title:  "to be an architecture"
 date:   2021-04-15 13:08:04 +0900
 categories: goal
+toc: true
+toc_label: "Unique Title"
+toc_icon: "heart"
+toc_sticky: true
 ---
 1. 知识广度：需要知道主流技术为什么诞生，能解决什么问题？如果同一种业务用不用的技术来实现，会有什么哪些优缺点？比如：流行的ORM框架Mybatis 和 hibernate ，还有spring框架他们之间的优缺点是什么？要有清晰的认识会能在技术造型时做出正确的决定。
     

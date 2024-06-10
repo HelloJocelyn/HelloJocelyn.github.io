@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "Springboot source code learning"
 date:   2021-04-15 13:08:04 +0900
 categories: 
@@ -11,6 +11,10 @@ tags:
   - featured image
   - image
   - layout
+toc: true
+toc_label: "Unique Title"
+toc_icon: "heart"
+toc_sticky: true
 ---
 
 初始化SpringApplication

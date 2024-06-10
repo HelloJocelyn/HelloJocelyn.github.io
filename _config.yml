@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Jocelyn's study
+title: Jocelyn's Life
 email: jocelynhu7@yahoo.com
 description: >- # this means to ignore newlines until "baseurl:"
   Love life, Love learning.
@@ -26,10 +26,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hellojocelyn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
-teaser: "/assets/images/weather.png"
-logo: "/assets/images/weather.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+teaser: "/assets/images/teaser.jpg"
+# logo: "/assets/images/weather.png"
+masthead_title           : Jocelyn's space # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
@@ -114,15 +114,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Jocelyn"
+  avatar           : "/assets/images/avatar0.jpeg"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Love learning"
+  location         : "Tokyo"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:jocelynhu7@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

@@ -1,8 +1,12 @@
 ---
-layout: posts
+layout: single
 title:  "cookie vs session"
 date:   2021-04-15 13:08:04 +0900
 categories: web
+toc: true
+toc_label: "Unique Title"
+toc_icon: "heart"
+toc_sticky: true
 ---
 Cookie
 --------------------------

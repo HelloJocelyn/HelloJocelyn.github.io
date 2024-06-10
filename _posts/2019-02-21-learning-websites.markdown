@@ -1,8 +1,12 @@
 ---
-layout: posts
+layout: single
 title:  "learning websites"
 date:   2021-04-15 13:08:04 +0900
 categories: general
+toc: true
+toc_label: "Unique Title"
+toc_icon: "heart"
+toc_sticky: true
 ---
 [](#Computer-Science-Learning "Computer Science Learning")Computer Science Learning
 -----------------------------------------------------------------------------------
