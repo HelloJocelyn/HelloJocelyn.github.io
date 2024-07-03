@@ -17,6 +17,9 @@ test
 ## Physics
 test
 ## CS
+### tla+
+1. https://zhuanlan.zhihu.com/p/424411906
+2. https://github.com/tlaplus/Examples?tab=readme-ov-file
 test
 ## EE
 test
@@ -32,3 +35,4 @@ test
 ###  test
 ## developer roadmap 
 https://github.com/kamranahmedse/developer-roadmap?tab=readme-ov-file
+

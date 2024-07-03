@@ -1,8 +1,7 @@
-# BASIC & EE
+BASIC & EE
 
-## Memory
-### storage
-EPROM 采用双层栅
+# EE
+## EPROM 采用双层栅
 
 1. 隧道效应： 能量小于势垒的的电子能够穿越势垒到达另一边
 
@@ -15,9 +14,8 @@ PN结
 
 
 floating gate transistor: https://analogcircuitdesign.com/floating-gate-mosfet/
-### RAM
 
-### MotherBoard
+## Single board computer
 1. BeagleBone
 2. strawberrypi
 3. Android
