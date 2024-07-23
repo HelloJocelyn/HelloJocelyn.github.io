@@ -8,7 +8,9 @@ categories: os
 
 # Operation system
 
-## Unrelated
+## General references
+1. https://book.huihoo.com/pc-architecture/chapter01.htm
+2. https://tungdam.medium.com/linux-network-ring-buffers-cea7ead0b8e8
 
 ### questions 
 1. bus architecture in morden computer system -> 6/26

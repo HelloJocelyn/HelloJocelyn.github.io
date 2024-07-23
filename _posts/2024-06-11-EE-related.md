@@ -17,5 +17,5 @@ floating gate transistor: https://analogcircuitdesign.com/floating-gate-mosfet/
 
 ## Single board computer
 1. BeagleBone
-2. strawberrypi
-3. Android
+2. Raspberry Pi
+3. Anduino

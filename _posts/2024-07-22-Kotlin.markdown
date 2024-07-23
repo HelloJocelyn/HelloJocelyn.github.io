@@ -1,0 +1,40 @@
+
+## kotlin
+
+kotlinconf: https://kotlinconf.com/
+## Questions to answer
+1. how kotlin manage coroutine
+2. what is the relation of coroutine and thread : thread.currentthread returns multiple thread name
+1. worker vs eventloop
+2. tracer : how the trace_id is got
+3. vertx architecture 
+	eventloop : channel ? 
+
+### inline,crossline,publishedApi,internal
+* non-local control flow
+
+### coroutine with vertx
+1. https://medium.com/@korhanbircan/multithreading-and-kotlin-ac28eed57fea
+
+
+
+## threads name
+
+1. finalizer
+2. notification
+3. signal dispatcher
+4. reference handler
+
+## Other topics
+### client pooling
+1. 
+
+### client pooling
+
+### multitasking
+
+
+
+
+
+
