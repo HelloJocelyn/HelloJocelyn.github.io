@@ -5,6 +5,9 @@ date:   2021-04-15 13:08:04 +0900
 categories: devops
 toc: true
 ---
+
+## Exam
+link: https://www.itexams.com/exam/200-301
 ## General Network Diagram
 1. Ethernet and cabling
 2. Bridge, switches 

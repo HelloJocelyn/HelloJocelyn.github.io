@@ -1,5 +1,17 @@
 
-## kotlin
+---
+layout: single
+title:  "Kotlin learning"
+date:   2024-07-22 14:00:00 +0900
+categories: goals
+header: 
+  image: assets\images\steps.jpg
+toc: true
+toc_label: "Table of content"
+#toc_icon: "heart"
+toc_sticky: true
+---
+# kotlin
 
 kotlinconf: https://kotlinconf.com/
 ## Questions to answer
@@ -10,8 +22,11 @@ kotlinconf: https://kotlinconf.com/
 3. vertx architecture 
 	eventloop : channel ? 
 
+## Keywords
+
 ### inline,crossline,publishedApi,internal
 * non-local control flow
+### launch, runblocking,
 
 ### coroutine with vertx
 1. https://medium.com/@korhanbircan/multithreading-and-kotlin-ac28eed57fea
@@ -31,7 +46,10 @@ kotlinconf: https://kotlinconf.com/
 
 ### client pooling
 
-### multitasking
+### multitasking 
+
+### actor model
+https://doc.akka.io/docs/akka/current/typed/guide/actors-intro.html
 
 
 

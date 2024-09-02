@@ -52,6 +52,13 @@ A device supporting interrupts has an output pin used for signaling an Interrupt
 
 ## Processes
 
+### Questions
+1. cpu/memory limitation for a process
+2. parent/child relationship between processes
+
+
+
+
 ## Threads
 
 ## Input/Output and Files
@@ -69,7 +76,13 @@ A device supporting interrupts has an output pin used for signaling an Interrupt
 
 ## Memory
 1. swap memory , stack size limit : https://stackoverflow.com/questions/344203/maximum-number-of-threads-per-process-in-linux
+2. rss & wss & cache 
 
+## Scheduling
+
+### items
+1. ched_min_granularity_ns
+2. Сgroups and CFS (completely fair scheduler) on Linux
 ## Further topics
 ### gate vs OS instruction list
 

@@ -35,9 +35,14 @@ google browser on macos -> server application -> google browser
 2. NIC send IRQ  to CPU
 ### TCP/IP Stack
 
+
+
 1. NIC interrupt application(driver?) copy ringbuffer data from DMA to **sk_buffer** which can be used by OS kernal
 2.  NIC interrupt application send **soft interruption** request to kernel **ksoftirqd** thread, then **ksoftirqd** calls poll api from driver to copy data in sk_buffer to kernal function **ip_rcv**\
 3. transportation function: udp -> udp_rcv, tcp -> tcp_rcv
+
+**linux implementation of socket.h:** *https://github.com/torvalds/linux/blob/master/net/socket.c*
+
 #### tcp_rcv
 当我们采用的是TCP协议时，数据包到达传输层时，会在内核协议栈中的tcp_rcv函数处理，在tcp_rcv函数中去掉TCP头，根据四元组（源IP，源端口，目的IP，目的端口）**查找对应的Socket**，如果找到对应的Socket则将网络数据包中的传输数据拷贝到Socket中的接收缓冲区中。如果没有找到，则发送一个目标不可达的icmp包。
 
@@ -118,6 +123,9 @@ In netty
 5. fdVal 
 6. accept: 
 epollCtlAdd0
+Netty: 
+1. ReactorBossGroupt: open serversocket channel,create pipe as selector, register the selctor to the server socket channel, server socket channel start to accept
+2. ReactorChildrenEventGroup
 ### application finish handling data and then calls socket api through framework to send data back to OS tcp/ip stack
 ### OS TCP/IP stack receives data and forms IP datagram and send to NIC
 ### NIC receives IP datagram, forms Frame(digital signal to analog signal) and send to SWITCH through cable

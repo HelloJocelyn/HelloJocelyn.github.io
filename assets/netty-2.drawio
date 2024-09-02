@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" modified="2024-07-30T12:12:36.192Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" etag="uQhYSeKu5SkalmBlQWGh" version="24.6.4" type="device">
+  <diagram name="Page-1" id="jam5OjEiNwf6yr0sAH_k">
+    <mxGraphModel dx="1270" dy="1812" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-1" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;NioEventLoopGroup&lt;/pre&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="145" y="240" width="190" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-2" value="&amp;lt;&amp;lt;stereotype1&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="jKAU-JXizvVSMp3Tc4wC-1">
+          <mxGeometry y="29" width="190" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-3" value="stereotype property 1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="jKAU-JXizvVSMp3Tc4wC-1">
+          <mxGeometry y="54" width="190" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-4" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;MultithreadEventLoopGroup&lt;/pre&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="90" width="260" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-5" value="&amp;lt;&amp;lt;stereotype1&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="jKAU-JXizvVSMp3Tc4wC-4">
+          <mxGeometry y="29" width="260" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-6" value="stereotype property 1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="jKAU-JXizvVSMp3Tc4wC-4">
+          <mxGeometry y="54" width="260" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-7" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.507;entryY=0.96;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-1" target="jKAU-JXizvVSMp3Tc4wC-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="80" y="250" as="sourcePoint" />
+            <mxPoint x="240" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-8" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;MultithreadEventExecutorGroup&lt;/pre&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="125" y="-100" width="230" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-9" value="&lt;div&gt;EventExecutor[] children&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="jKAU-JXizvVSMp3Tc4wC-8">
+          <mxGeometry y="29" width="230" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-10" value="stereotype property 1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="jKAU-JXizvVSMp3Tc4wC-8">
+          <mxGeometry y="54" width="230" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-11" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.514;exitY=-0.076;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-4" target="jKAU-JXizvVSMp3Tc4wC-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="250" y="260" as="sourcePoint" />
+            <mxPoint x="251" y="198" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-15" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-4" target="jKAU-JXizvVSMp3Tc4wC-34">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="150" as="sourcePoint" />
+            <mxPoint x="616.02" y="13" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-16" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;AbstractEventExecutorGroup&lt;/pre&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="135" y="-250" width="210" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-17" value="&amp;lt;&amp;lt;stereotype1&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="jKAU-JXizvVSMp3Tc4wC-16">
+          <mxGeometry y="29" width="210" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-18" value="stereotype property 1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="jKAU-JXizvVSMp3Tc4wC-16">
+          <mxGeometry y="54" width="210" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-19" value="«interface»&lt;br&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;EventExecutorGroup&lt;/pre&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-430" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-20" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-16" target="jKAU-JXizvVSMp3Tc4wC-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="250" y="120" as="sourcePoint" />
+            <mxPoint x="626" y="23" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-21" value="«interface»&lt;br&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 50%;&quot;&gt;&lt;pre style=&quot;font-size: 9.8pt; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;ScheduledExecutorService&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 50%;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;schedule&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-580" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-22" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-19" target="jKAU-JXizvVSMp3Tc4wC-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="252" y="114" as="sourcePoint" />
+            <mxPoint x="250" y="9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-23" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-8" target="jKAU-JXizvVSMp3Tc4wC-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="252" y="114" as="sourcePoint" />
+            <mxPoint x="250" y="9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-24" value="«interface»&lt;br&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Iterable&lt;/pre&gt;&lt;/pre&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="25" y="-420" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-25" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="jKAU-JXizvVSMp3Tc4wC-24">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="240" y="-250" as="sourcePoint" />
+            <mxPoint x="445" y="-350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-26" value="«interface»&lt;br&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 50%;&quot;&gt;&lt;pre style=&quot;font-size: 9.8pt; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;ExecutorService&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 50%;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;shutdown&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 50%;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;submit&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;invokeAll&lt;/font&gt;&lt;/pre&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="340" y="-750" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-27" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-21" target="jKAU-JXizvVSMp3Tc4wC-26">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="438" y="-405" as="sourcePoint" />
+            <mxPoint x="435" y="-480" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-28" value="«interface»&lt;br&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 50%;&quot;&gt;&lt;pre style=&quot;font-size: 9.8pt; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace;&quot;&gt;Executor&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 50%;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;execute&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="370" y="-870" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-29" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-26" target="jKAU-JXizvVSMp3Tc4wC-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="-530" as="sourcePoint" />
+            <mxPoint x="435" y="-640" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-33" value="«interface»&lt;br&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;EventExecutorGroup&lt;/pre&gt;&lt;/pre&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="580" y="-280" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-34" value="«interface»&lt;br&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9px; line-height: 60%;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;EventLoopGroup&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 60%;&quot;&gt;next&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; line-height: 60%;&quot;&gt;register&lt;/pre&gt;&lt;/pre&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="580" y="-130" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-35" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-34" target="jKAU-JXizvVSMp3Tc4wC-33">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="252" y="114" as="sourcePoint" />
+            <mxPoint x="250" y="-11" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-36" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="jKAU-JXizvVSMp3Tc4wC-33" target="jKAU-JXizvVSMp3Tc4wC-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="435" y="-420" as="sourcePoint" />
+            <mxPoint x="560" y="-490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jKAU-JXizvVSMp3Tc4wC-37" value="JUC" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="-900" width="745" height="420" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

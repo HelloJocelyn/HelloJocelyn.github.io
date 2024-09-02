@@ -11,6 +11,7 @@ toc_label: "Table of content"
 toc_sticky: true
 ---
 # General categories
+resolve anxiety 
 
 ## Career
 Career Goal: start my own business which explore new world and help on people's happiness and peace
@@ -81,7 +82,16 @@ how to know/manage people, explore job opportunity
 test
 ### History
 ### Power & Game
+1. power, moral values, and the intellectual : https://monoskop.org/images/e/e2/Foucault_Michel_1988_Power_Moral_Values_and_the_Intellectual.pdf
+  On the other hand, if I use my age, my social position, the knowledge I may have about this or that, to make you behave in some particular way that is to say, I'm not forcing you at all and I'm leaving you completely free-that's when I begin to exercise power.
 ### robotics
+### human and society
+what is the massive desire
+1. desire people know they're having and fignting for
+2. desire people don't know they have
+3. desire after they meet their current desire(prediction: general principle of human mentality growth: maslov)
+
+
 
 
 ### trending knowledge:physics,chemistry,etc

@@ -1,3 +1,16 @@
+
+---
+layout: single
+title:  "Electrical Engineering"
+date:   2024-06-11 14:00:00 +0900
+categories: goals
+header: 
+  image: assets\images\steps.jpg
+toc: true
+toc_label: "Table of content"
+#toc_icon: "heart"
+toc_sticky: true
+---
 BASIC & EE
 
 # EE
@@ -19,3 +32,7 @@ floating gate transistor: https://analogcircuitdesign.com/floating-gate-mosfet/
 1. BeagleBone
 2. Raspberry Pi
 3. Anduino
+
+
+## HDMI protocol
+1. link : https://www.prodigytechno.com/hdmi-protocol
