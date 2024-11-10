@@ -78,6 +78,9 @@ A device supporting interrupts has an output pin used for signaling an Interrupt
 1. swap memory , stack size limit : https://stackoverflow.com/questions/344203/maximum-number-of-threads-per-process-in-linux
 2. rss & wss & cache 
 
+### ariticles
+1. https://mohamedmsaeed.medium.com/memory-working-set-vs-memory-rss-in-kubernetes-which-one-you-should-monitor-8ef77bf0acee
+
 ## Scheduling
 
 ### items
@@ -85,4 +88,10 @@ A device supporting interrupts has an output pin used for signaling an Interrupt
 2. Сgroups and CFS (completely fair scheduler) on Linux
 ## Further topics
 ### gate vs OS instruction list
+### spin_lock & rcu_read_lock_sched in linux
+
+
+## Filesystem
+### Materials
+1. https://bcachefs.org/
 

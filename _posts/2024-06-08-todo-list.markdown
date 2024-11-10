@@ -16,6 +16,9 @@ resolve anxiety
 ## Career
 Career Goal: start my own business which explore new world and help on people's happiness and peace
 What can be done now
+1. https://www.freecodecamp.org/learn
+2. https://github.com/Hannibal046/Awesome-LLM
+3. c++ : https://github.com/salmer/CppDeveloperRoadmap
 ### Work
 to-do
 1. Management

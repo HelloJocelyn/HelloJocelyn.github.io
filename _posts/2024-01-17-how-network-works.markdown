@@ -17,29 +17,36 @@ frame 	     -> segment -> 	packet 	->
 
 
 
-## Data Flow
-google browser on macos -> server application -> google browser
+## General1 Flow
+1. TX: google browser -> OS TCP/IP stack module -> NIC card -> Lan Router -> WAN -> Lan router -> LB -> Target Host's NIC card -> Target Host OS's TCP/IP stack(cgroup?) -> server application (-> dependencies)
 
-### google browser wrap data
-### google browser call os tcp stack and pass data -> socket api
-### os tcp stack call ip stack and pass data
-### ip stack pass data to nic
-### nic send data out to connected router (wireless)
-### router send data to isp
-### isp send data to next hop
-### public router receive data 
-### router send data to switch
-### switch send data to target host
-### target host nic receives data(Level 1)
+### google browser 
+1. wrap data
+2. google browser call os tcp stack and pass data -> socket api
+### OS TCP/IP stack module
+1. ip stack pass data to nic
+### NIC card
+1. nic send data out to connected router (wireless)
+### Lan Router: router send data to ISP
+### WAN: 
+1. isp send data to next hop
+2. public router receive data 
+### Company network(Lan router)
+1. edge router send data to switch
+2. switch send data to target host
+### Target Host's NIC card 
+target host nic receives data(Level 1)
 1. NIC copy data to ringbuffer in DMA
 2. NIC send IRQ  to CPU
 ### TCP/IP Stack
 
-
-
 1. NIC interrupt application(driver?) copy ringbuffer data from DMA to **sk_buffer** which can be used by OS kernal
 2.  NIC interrupt application send **soft interruption** request to kernel **ksoftirqd** thread, then **ksoftirqd** calls poll api from driver to copy data in sk_buffer to kernal function **ip_rcv**\
 3. transportation function: udp -> udp_rcv, tcp -> tcp_rcv
+4. source code reading: https://blog.csdn.net/qq_56044032/article/details/136015796
+5. linux network
+	1. https://maxnilz.com/docs/004-network/005-linux-rx/
+	2. https://tungdam.medium.com/linux-network-ring-buffers-cea7ead0b8e8
 
 **linux implementation of socket.h:** *https://github.com/torvalds/linux/blob/master/net/socket.c*
 
@@ -96,6 +103,44 @@ recv() returns when a socket has new data, which has been read into a userspace 
 
 Apache processes the buffer, parsing HTTP protocol strings
 
+
+```
+int __inet_listen_sk(struct sock *sk, int backlog)
+{
+	unsigned char old_state = sk->sk_state;
+	int err, tcp_fastopen;
+
+	if (!((1 << old_state) & (TCPF_CLOSE | TCPF_LISTEN)))
+		return -EINVAL;
+
+	WRITE_ONCE(sk->sk_max_ack_backlog, backlog);
+	/* Really, if the socket is already in listen state
+	 * we can only allow the backlog to be adjusted.
+	 */
+	if (old_state != TCP_LISTEN) {
+		/* Enable TFO w/o requiring TCP_FASTOPEN socket option.
+		 * Note that only TCP sockets (SOCK_STREAM) will reach here.
+		 * Also fastopen backlog may already been set via the option
+		 * because the socket was in TCP_LISTEN state previously but
+		 * was shutdown() rather than close().
+		 */
+		tcp_fastopen = READ_ONCE(sock_net(sk)->ipv4.sysctl_tcp_fastopen);
+		if ((tcp_fastopen & TFO_SERVER_WO_SOCKOPT1) &&
+		    (tcp_fastopen & TFO_SERVER_ENABLE) &&
+		    !inet_csk(sk)->icsk_accept_queue.fastopenq.max_qlen) {
+			fastopen_queue_tune(sk, backlog);
+			tcp_fastopen_init_key_once(sock_net(sk));
+		}
+
+		err = inet_csk_listen_start(sk);
+		if (err)
+			return err;
+
+		tcp_call_bpf(sk, BPF_SOCK_OPS_TCP_LISTEN_CB, 0, NULL);
+	}
+	return 0;
+}
+```
 
 #### Reference
 1. skbuffer: https://github.com/torvalds/linux/blob/master/include/linux/skbuff.h
