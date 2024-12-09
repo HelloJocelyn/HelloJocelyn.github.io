@@ -1,0 +1,112 @@
+---
+slug: "netty"
+date: "2024-08-02"
+title: "How netty works"
+category: "CS"
+excerpt: "To understand how netty works taking linux as an example"
+---
+
+## test
+### NioEventLoopGroup
+1. SelectorProvider.provider(): decide which provider to use by checking property, *service*, if not found, then use default: 
+    ```
+         public static SelectorProvider create() {
+            String osname = AccessController
+                .doPrivileged(new GetPropertyAction("os.name"));
+            if (osname.equals("SunOS"))
+                return createProvider("sun.nio.ch.DevPollSelectorProvider");
+            if (osname.equals("Linux"))
+                return createProvider("sun.nio.ch.EPollSelectorProvider");
+            return new sun.nio.ch.PollSelectorProvider();
+    }
+    ```
+2. DefaultSelectStrategyFactory.INSTANCE
+3. RejectedExecutionHandlers.reject(): 
+```
+private static final RejectedExecutionHandler REJECT = new RejectedExecutionHandler() {
+        @Override
+        public void rejected(Runnable task, SingleThreadEventExecutor executor) {
+            throw new RejectedExecutionException();
+        }
+};
+```
+4. DefaultEventExecutorChooserFactory.INSTANCE : 
+```
+// GenericEventExecutorChooser
+public EventExecutor next() {
+            return executors[(int) Math.abs(idx.getAndIncrement() % executors.length)];
+}
+```
+5. new ThreadPerTaskExecutor(newDefaultThreadFactory());
+
+```
+ protected MultithreadEventExecutorGroup(int nThreads, Executor executor,
+                                        EventExecutorChooserFactory chooserFactory, Object... args) {
+    checkPositive(nThreads, "nThreads");
+
+    if (executor == null) {
+        executor = new ThreadPerTaskExecutor(newDefaultThreadFactory()); // executor in eventloop
+        // newDefaultThreadFactory(): 
+        // DefaultThreadFactory {}
+        // newThread: new FastThreadLocalThread(threadGroup, r, name);
+
+        
+    }
+
+    children = new EventExecutor[nThreads];
+    //NioEventLoop
+
+    for (int i = 0; i < nThreads; i ++) {
+        boolean success = false;
+        try {
+            children[i] = newChild(executor, args);
+            success = true;
+        } catch (Exception e) {
+            // TODO: Think about if this is a good exception type
+            throw new IllegalStateException("failed to create a child event loop", e);
+        } finally {
+            if (!success) {
+                for (int j = 0; j < i; j ++) {
+                    children[j].shutdownGracefully();
+                }
+
+                for (int j = 0; j < i; j ++) {
+                    EventExecutor e = children[j];
+                    try {
+                        while (!e.isTerminated()) {
+                            e.awaitTermination(Integer.MAX_VALUE, TimeUnit.SECONDS);
+                        }
+                    } catch (InterruptedException interrupted) {
+                        // Let the caller handle the interruption.
+                        Thread.currentThread().interrupt();
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    chooser = chooserFactory.newChooser(children);
+
+    final FutureListener<Object> terminationListener = new FutureListener<Object>() {
+        @Override
+        public void operationComplete(Future<Object> future) throws Exception {
+            if (terminatedChildren.incrementAndGet() == children.length) {
+                terminationFuture.setSuccess(null);
+            }
+        }
+    };
+
+    for (EventExecutor e: children) {
+        e.terminationFuture().addListener(terminationListener);
+    }
+
+    Set<EventExecutor> childrenSet = new LinkedHashSet<EventExecutor>(children.length);
+    Collections.addAll(childrenSet, children);
+    readonlyChildren = Collections.unmodifiableSet(childrenSet);
+}
+
+```
+
+
+### Netty对JDK NIO 原生Selector的优化
