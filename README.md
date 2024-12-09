@@ -1,35 +1,49 @@
-## Jekyll
-### Usage:https://jekyllrb.com/docs/
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Minimal Starter
+</h1>
 
-## URL for this blog: https://hellojocelyn.github.io
+## 🚀 Quick start
 
-## Local Build
-### Run ```jekyll server``` to build(generate files) and start server
+1.  **Create a Gatsby site.**
 
-## Usage
-### (macos)
-1. gem install bundler jekyll
-2. jekyll new my-awesome-site
-2. {jekyll command not found} -> add into env
-3. bundle exec jekyll serve (-l)
-### windows
-1. prerequisites: 
-    1. Ruby version 2.5.0 or higher
-    2. RubyGems
-    3. GCC and Make
-2. gem install jekyll bundler
-3. gem install
-    gem install wdm -- --with-cflags=-Wno-implicit-function-declaration
-3. bundle exec jekyll serve
+    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
+    ```shell
+    # create a new Gatsby site using the minimal starter
+    npm init gatsby
+    ```
 
-## Additionals
-### add specific tool into the path
-''' echo 'export PATH="/usr/local/lib/ruby/gems/3.3.0/bin:$PATH"' >> /Users/jiajia.hu/.bash_profile '''
+2.  **Start developing.**
 
-## Theme
-minima
-### theme custmization
-https://github.com/jekyll/minima
-### comment 
-https://gabrielstaples.com/github-pages-comments/#gsc.tab=0
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
+
+3.  **Open the code and start customizing!**
+
+    Your site is now running at http://localhost:8000!
+
+    Edit `src/pages/index.js` to see your site update in real-time!
+
+4.  **Learn more**
+
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+## 🚀 Quick start (Netlify)
+
+Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)

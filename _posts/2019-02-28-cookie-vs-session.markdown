@@ -44,9 +44,9 @@ Cookie
     打开chrome的Cookie文件，看到是sqllite的数据库文件，使用sqllite database browser打开该数据库文件。可以看到下面数据。
 
 图一：谷歌浏览器查看  
-![cookie-chrome-storage](../pics/cookie-chrome-storage.png)  
+![cookie-chrome-storage](../images/cookie-chrome-storage.png)  
 图二：sqlite database browser查看  
-![cookie-chrome-sqlite](../pics/cookie-chrome-sqlite.png)
+![cookie-chrome-sqlite](../images/cookie-chrome-sqlite.png)
 
 可以看到value数据为空，但是多了个encrypted\_value. 浏览器会把比较重要的信息例如自动登录的账号密码以及各种 token 等信息加密存放到此字段中，在发送请求的时候浏览器会将此字段解密，作为请求发给服务器.(然而这个很容易就被人破解，唉)
 
