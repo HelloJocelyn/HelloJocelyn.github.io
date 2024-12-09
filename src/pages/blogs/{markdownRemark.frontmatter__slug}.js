@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Layout from '../../components/layout'
+import Content from '../../components/content'
 import Seo from '../../components/seo'
 import HeaderNav from '../../components/headerNav'
 
@@ -13,15 +13,14 @@ const BlogPost = ({ data, children }) => {
   return (
     <div>
       <HeaderNav></HeaderNav>
-      <Layout>
+      <Content>
         <div>
-          {/* <div className="text-3xl font-bold text-center  mb-6">{frontmatter.title}</div> */}
           <div
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <h2>{frontmatter.date}</h2>
         </div>
-      </Layout>
+      </Content>
     </div>
 
   )

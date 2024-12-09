@@ -1,17 +1,26 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../components/layout'
+import Content from '../components/content'
 import Seo from "../components/seo"
 import HeaderNav from '../components/headerNav'
-console.log('mygoals component');
 
 const MyGoals = () => {
     return (
         <div>
             <HeaderNav></HeaderNav>
-            <Layout pageTitle="My Goals">
+            <Content pageTitle="My Goals">
                 <p>The list of my goals in my limited years of life</p>
-            </Layout>
+                <ol>
+                    <li>To buy my own house</li>
+                    <li>To buy my own car</li>
+                    <li>To learn piano well</li>
+                    <li>To participate in a music band</li>
+                    <li>To learn quantitum</li>
+                    <li>To learn robotics</li>
+                    <li>To learn finance</li>
+                    <li>To invest in stock market</li>
+                </ol>
+            </Content>
         </div>
 
     )

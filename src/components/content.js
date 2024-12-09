@@ -4,7 +4,7 @@ import { container, heading, navLinks, navItem, navLinkText, siteTitle } from '.
 import HeaderNav from './headerNav'
 
 
-const Layout = ({ pageTitle, children }) => {
+const Content = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
         query {
           site {
@@ -18,7 +18,7 @@ const Layout = ({ pageTitle, children }) => {
         <div>
             <div className={container}>
                 <main>
-                    <h1 className={heading}>{pageTitle}</h1>
+                    {/*<h1 className={heading}>{pageTitle}</h1>*/}
                     {children}
                 </main>
             </div>
@@ -27,4 +27,4 @@ const Layout = ({ pageTitle, children }) => {
     )
 }
 
-export default Layout
+export default Content
