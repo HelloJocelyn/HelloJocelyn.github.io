@@ -70,4 +70,10 @@ code {
     display: block;
     white-space: pre;
     overflow-x: scroll;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem;
+    background-color: rgb(248 250 252);
+    border-radius: 0.25rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }

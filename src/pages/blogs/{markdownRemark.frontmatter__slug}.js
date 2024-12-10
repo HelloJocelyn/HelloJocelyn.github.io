@@ -14,12 +14,16 @@ const BlogPost = ({ data, children }) => {
     <div>
       <HeaderNav></HeaderNav>
       <Content>
-        <div>
-          <div
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-          <h2>{frontmatter.date}</h2>
-        </div>
+          <div>
+              <div className="text-center mb-6 text-4xl font-bold bg-none">{frontmatter.title}</div>
+              <div className="tracking-wide text-sm text-indigo-300">{frontmatter.date}</div>
+              <GatsbyImage image={frontmatter.featuredImage?.childImageSharp?.gatsbyImageData}
+                           className="h-48 object-cover "/>
+              <div
+                  dangerouslySetInnerHTML={{__html: html}}
+              />
+
+          </div>
       </Content>
     </div>
 
@@ -34,6 +38,12 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
+        title
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(width: 800)
+          }
+        }
       }
     }
   }

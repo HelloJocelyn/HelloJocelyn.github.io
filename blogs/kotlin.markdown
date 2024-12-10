@@ -4,6 +4,7 @@ date: "2024-07-22"
 title: "Learn kotlin"
 category: "CS"
 excerpt: "To learn kotlin"
+featuredImage: "../images/cookie-chrome-sqlite.png"
 ---
 
 

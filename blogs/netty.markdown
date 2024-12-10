@@ -4,9 +4,9 @@ date: "2024-08-02"
 title: "How netty works"
 category: "CS"
 excerpt: "To understand how netty works taking linux as an example"
+featuredImage: "../images/cookie-chrome-sqlite.png"
 ---
 
-## test
 ### NioEventLoopGroup
 1. SelectorProvider.provider(): decide which provider to use by checking property, *service*, if not found, then use default: 
     ```

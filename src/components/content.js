@@ -15,14 +15,11 @@ const Content = ({ pageTitle, children }) => {
         }
       `)
     return (
-        <div>
-            <div className={container}>
-                <main>
-                    {/*<h1 className={heading}>{pageTitle}</h1>*/}
-                    {children}
-                </main>
-            </div>
-        </div>
+        <>
+            <main className="m-auto justify-center max-w-md md:max-w-xl lg:max-w-3xl">
+                {children}
+            </main>
+        </>
 
     )
 }

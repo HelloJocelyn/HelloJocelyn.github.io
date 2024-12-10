@@ -1,9 +1,10 @@
 ---
-slug: "kotlin"
+slug: "Springboot"
 date: "2024-07-22"
 title: "Springboot learning"
 category: "CS"
-excerpt: "To learn springboot"
+excerpt: "To learn springboot test"
+featuredImage: "./DMA-diagram.png"
 ---
 
 
