@@ -9,7 +9,8 @@ featuredImage: "../images/cookie-chrome-sqlite.png"
 # General categories
 resolve anxiety 
 
-## Career
+## Career - to consolidate the foundation 
+
 Career Goal: start my own business which explore new world and help on people's happiness and peace
 What can be done now
 1. https://www.freecodecamp.org/learn
@@ -42,7 +43,7 @@ https://github.com/kamranahmedse/developer-roadmap?tab=readme-ov-file
 6. manager : manager path
 
 
-
+## Career - to explore horizontally
 ### my own app
 to-do
 1. practice starting from "TimeMatters"  

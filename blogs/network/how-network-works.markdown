@@ -10,6 +10,9 @@ featuredImage: "../images/cookie-chrome-sqlite.png"
 
 link layer   -> 	IP 	-> 	TCP 	-> HTTP
 frame 	     -> segment -> 	packet 	-> 
+business level : software level  -> radio wave -> software level (isp) -> company network range -> target host 
+tech involeved : pc (os, OSI model, digital to analog) -> radio wave -> modem, router, osi,os -> cdn,lb,firewall -> analog to digital,os,osi,programming language, framework,product
+companies/field: linux, IETF,bcm
 ## Questions
 1. mtu: 网络帧的大小，如果一个ip packet比较大时
 2. 硬中断，软中断
@@ -20,7 +23,7 @@ frame 	     -> segment -> 	packet 	->
 6. jvm把java code翻译成？
 7. 操作系统代码加载详细过程
 8. 编译器在操作系统加载过程中的作用
-9. 
+9. how wifi card capture radio wave, how radio wave transmitted long distance
 
 
 
