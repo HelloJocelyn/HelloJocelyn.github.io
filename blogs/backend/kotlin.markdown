@@ -34,12 +34,22 @@ kotlinconf: https://kotlinconf.com/
 
 
 
-## threads name
+## coroutine 
+### Questions list: 
+1. how to print out the running coroutine name: 
+### Always running threads
+1. finalizer : 
+2. notification : 
+3. signal dispatcher : 
+4. reference handler : 
 
-1. finalizer
-2. notification
-3. signal dispatcher
-4. reference handler
+### Basic usage
+
+### How it works (check source code)
+1. runBlocking
+2. 
+
+### Coroutine scopes
 
 ## Other topics
 ### client pooling

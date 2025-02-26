@@ -30,5 +30,6 @@ floating gate transistor: https://analogcircuitdesign.com/floating-gate-mosfet/
 3. Anduino
 
 
-## HDMI protocol
-1. link : https://www.prodigytechno.com/hdmi-protocol
+## Hardware protocols
+1. HDMI : https://www.prodigytechno.com/hdmi-protocol
+2. type c 

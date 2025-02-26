@@ -12,7 +12,7 @@ link layer   -> 	IP 	-> 	TCP 	-> HTTP
 frame 	     -> segment -> 	packet 	-> 
 business level : software level  -> radio wave -> software level (isp) -> company network range -> target host 
 tech involeved : pc (os, OSI model, digital to analog) -> radio wave -> modem, router, osi,os -> cdn,lb,firewall -> analog to digital,os,osi,programming language, framework,product
-companies/field: linux, IETF,bcm
+companies/field: linux, IETF,bcm,ipex
 ## Questions
 1. mtu: 网络帧的大小，如果一个ip packet比较大时
 2. 硬中断，软中断
@@ -244,3 +244,5 @@ load balancer -> haproxy -> service -> pod
 2. https://stackoverflow.com/questions/41522936/what-happens-between-receiving-network-data-on-the-ethernet-port-and-apache2-doi
 3. https://tungdam.medium.com/linux-network-ring-buffers-cea7ead0b8e8
 4. https://github.com/kangjianwei/LearningJDK
+5. os network stack: https://myaut.github.io/dtrace-stap-book/kernel/net.html
+

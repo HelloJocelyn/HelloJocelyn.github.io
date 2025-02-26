@@ -1,0 +1,67 @@
+body {
+    font-size: 16px;
+    background-color: silver;
+    padding: 0%;
+}
+
+* {
+    padding: 5px;
+
+}
+
+.summary {
+    height: auto;
+    /* box-shadow: 5px 5px 2px 3px lightblue; */
+    background-color: aqua;
+    /* margin: 10px; */
+    box-sizing: content-box;
+    border: 1px solid black;
+    /* padding: 15px; */
+    overflow: hidden;
+
+}
+
+.summary h2 {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+code {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px grey inset;
+    border-radius: 2px;
+    padding: 3px
+}
+
+.block {
+    height: fit-content;
+}
+
+h4 {
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+}
+
+p {
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+}
+
+.black-border {
+    margin-top: 2px;
+    border: 1px solid black;
+}
+
+.inline {
+    height: fit-content;
+}
+
+.inline span {
+    border-right: 2px dashed black;
+    border-bottom: 1px dashed black;
+    border-radius: 3px;
+    padding-right: 5px;
+    /* background-color: aqua; */
+    line-height: 2rem;
+
+}

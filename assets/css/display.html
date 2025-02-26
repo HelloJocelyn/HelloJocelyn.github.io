@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CSS Display Practice</title>
+    <link rel="stylesheet" href="./display.css">
+</head>
+
+<body>
+    <div class="summary">
+        <h2>
+            CSS Display Practice
+        </h2>
+        <p>
+            <strong>All Values for display:</strong> block, inline
+            ,contents,flex,grid,inline-block,inline-flex,inline-grid,inline-table,list-item,run-in,
+            table,table-caption,table-column-group,table-header-group,table-footer-group,table-row-group,table-cell,table-column,
+            table-row,none,initial,inherit
+        </p>
+        <p>
+            <strong>Mostly used values :</strong>
+            block,inline,inline-block,none,flex,grid,table,table-row,table-cell,list-item,run-in
+        </p>
+        <p><strong>Notes: </strong>
+            The applied area of box model is content + padding for the following properties:
+            background-color, background; For box-shadow: applied area is content+margin+border; height,width: applied
+            area decided by property box-sizing
+            <strong style="color: blue;">Exception:</strong> the body's background and background-color's applied area
+            extend to the full page by default set by the browser
+
+        </p>
+    </div>
+
+    <div class="block black-border">
+        <h4>block display </h4>
+        <p><strong>Description: </strong>An element with display: block takes up the full width of its container by
+            default and starts on a new line,
+            meaning it forces the next element to appear below it.</p>
+        <p> <strong>Block elements by default:</strong>
+            <code>&lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;section&gt; </code>
+        </p>
+
+    </div>
+
+    <div class="inline black-border">
+        <h4>inline </h4>
+        <span><strong>Description: </strong>An element with display: inline only takes up as much width as necessary (it
+            does not break onto a new
+            line) and flows inline with other elements. Margins and padding will not affect the element's layout unless
+            they are applied horizontally</span> <span><strong>inline-block elements by default:</strong>
+            <code>&lt;strong&gt;,&lt;span&gt;</code></span> <span><strong>Notes: </strong>width,height are not
+            ajustable, height can be ajusted by line-height. </span>
+
+
+    </div>
+</body>
