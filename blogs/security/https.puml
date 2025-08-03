@@ -1,0 +1,29 @@
+@startuml
+actor Browser as Client
+participant "Server" as Server
+database "Intermediate CA" as ICA
+database "Root CA (Trusted by Client)" as RootCA
+
+== TLS 握手开始 ==
+Client -> Server : ClientHello\n(supported ciphers, TLS version, random)
+Server -> Client : ServerHello\n(chosen cipher, random)
+
+Server -> Client : Certificate Chain\n(Server Cert + Intermediate CA Cert)
+note right of Server
+  Server sends certificate chain\n(but not Root CA cert)
+end note
+
+== 验证证书链 ==
+Client -> RootCA : Verify Root CA (pre-installed in trust store)
+Client -> ICA : Verify Intermediate CA\n(using Root CA public key)
+Client -> Server : Verify Server Certificate\n(using Intermediate CA public key)
+
+alt Certificate Chain Valid
+    Client -> Server : Pre-Master Key (encrypted with server public key)
+    Server -> Client : Key Exchange Complete
+    Client <-> Server : Encrypted HTTPS Data
+else Invalid Certificate
+    Client -> Server : Connection Aborted\n(TLS handshake failed)
+end
+
+@enduml
