@@ -33,3 +33,14 @@ floating gate transistor: https://analogcircuitdesign.com/floating-gate-mosfet/
 ## Hardware protocols
 1. HDMI : https://www.prodigytechno.com/hdmi-protocol
 2. type c 
+
+
+## 二极管
+### 特性
+
+### 应用
+
+
+## 三极管
+
+## 场效应管

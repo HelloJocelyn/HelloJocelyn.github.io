@@ -4,6 +4,11 @@ participant "Server" as Server
 database "Intermediate CA" as ICA
 database "Root CA (Trusted by Client)" as RootCA
 
+== TCP Establishment ==
+Client -> Server: Sends SYN
+Server -> Client: Sends SYN + ACK
+Client -> Server: Sends ACK
+
 == TLS 握手开始 ==
 Client -> Server : ClientHello\n(supported ciphers, TLS version, random)
 Server -> Client : ServerHello\n(chosen cipher, random)

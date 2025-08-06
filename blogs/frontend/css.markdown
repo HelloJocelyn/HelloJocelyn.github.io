@@ -1,3 +1,11 @@
+---
+slug: "CSS-learning"
+date: "2024-10-14"
+title: "CSS learning"
+category: "frontend"
+excerpt: "CSS learning"
+featuredImage: ""
+---
 # CSS
 
 ## box model
@@ -70,6 +78,9 @@ CSS supports responsive design through the use of media queries, which allow dif
 CSS also includes tools to help with accessibility, like controlling contrast using color and background-color, ensuring text resizing with rem and em units, and supporting high-contrast themes.
 
 
+
+## Properties
+1. unicode-bidi: 
 
 ## Other UI system 
 1. Apple

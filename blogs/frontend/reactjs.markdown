@@ -21,3 +21,4 @@ featuredImage: ""
     1. multiple state values
     2. derived state
     3. Lifting state up
+5. Patterns & Best Practices
