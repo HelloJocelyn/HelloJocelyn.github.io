@@ -1,3 +1,11 @@
+---
+slug: "physics-leaning-plan"
+date: "2024-10-29"
+title: "Physics Learning Plan"
+category: "physics"
+excerpt: "Physics Learning Plan"
+featuredImage: ""
+---
 # Physics
 
 ## branches

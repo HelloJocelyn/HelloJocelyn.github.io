@@ -2,7 +2,6 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import Content from '../components/content'
 import Seo from "../components/seo"
-import HeaderNav from '../components/headerNav'
 import Footer from '../components/footer'
 
 const MyGoals = () => {
@@ -47,12 +46,11 @@ const MyGoals = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-            <HeaderNav />
             <div className="container mx-auto px-4 py-16">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                        My Life Goals
+                        My Todos
                     </h1>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         The milestones I'm working towards in my journey of life

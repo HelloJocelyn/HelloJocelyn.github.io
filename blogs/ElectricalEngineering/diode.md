@@ -1,3 +1,12 @@
+---
+slug: "diode"
+date: "2025-03-29"
+title: "Diode"
+category: "ee"
+excerpt: "Diode"
+featuredImage: ""
+---
+
 # diode
 ## 原子结构，分子结构
 

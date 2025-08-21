@@ -1,5 +1,4 @@
 import * as React from "react"
-import HeaderNav from '../components/headerNav'
 import {StaticImage} from "gatsby-plugin-image";
 import Seo from "../components/seo";
 import Content from "../components/content";
@@ -8,7 +7,6 @@ import Footer from "../components/footer";
 const Home = ()=>{
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-            <HeaderNav />
             <div className="container mx-auto px-4 py-16">
                 {/* Hero Section */}
                 <div className="text-center mb-16">
@@ -16,7 +14,7 @@ const Home = ()=>{
                         <div className="relative inline-block">
                             <StaticImage
                                 alt="Jocelyn's profile"
-                                src="../images/1.jpg"
+                                src="../images/avatar0.jpeg"
                                 className="rounded-full w-32 h-32 md:w-40 md:h-40 object-cover shadow-2xl border-4 border-white"
                                 imgStyle={{ borderRadius: '50%' }}
                             />
@@ -66,7 +64,7 @@ const Home = ()=>{
                                     and connect with fellow knowledge seekers.
                                 </p>
                             </div>
-                            <div className="space-y-4">
+                            {/* <div className="space-y-4">
                                 <div className="flex items-center space-x-3">
                                     <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                                     <span className="text-gray-700">Full-stack Development</span>
@@ -83,7 +81,7 @@ const Home = ()=>{
                                     <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
                                     <span className="text-gray-700">Quantum Computing</span>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -118,7 +116,7 @@ const Home = ()=>{
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-semibold text-gray-800 group-hover:text-purple-600 transition-colors">
-                                            My Goals
+                                            My Todos
                                         </h3>
                                         <p className="text-gray-600">See what I'm working towards and learning</p>
                                     </div>

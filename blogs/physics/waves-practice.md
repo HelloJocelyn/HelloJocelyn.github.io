@@ -1,9 +1,17 @@
-# waves observation and practice
-## waves observation
+---
+slug: "radio-learning"
+date: "2024-10-29"
+title: "Radio Learning"
+category: "physics"
+excerpt: "Radio Learning"
+featuredImage: ""
+---
+# radio observation and practice
+## radio observation
 
-## waves to digital signal
+## radio to digital signal
 
-## digital signal to waves
+## digital signal to radio
 
 ```
 import numpy as np

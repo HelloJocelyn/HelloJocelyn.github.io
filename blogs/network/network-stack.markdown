@@ -1,3 +1,11 @@
+---
+slug: "network-stack-in-os"
+date: "2024-10-29"
+title: "Network Stack"
+category: "CS"
+excerpt: "Network Stack"
+featuredImage: ""
+---
 # Networkstacks
 1. API calls from application to networkstack
 2. Functions, main data structures, main parameters in tcp/ip stack that users can user to tune

@@ -1,3 +1,11 @@
+---
+slug: "internet-backbone"
+date: "2024-10-29"
+title: "Intenet Backbone"
+category: "CS"
+excerpt: "Internet backbone"
+featuredImage: ""
+---
 # Internet Backbone
 
 ## What is Internet Backbone

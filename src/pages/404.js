@@ -1,12 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import HeaderNav from '../components/headerNav'
 import Footer from '../components/footer'
 
 const NotFoundPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <HeaderNav />
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-2xl mx-auto text-center">
           {/* 404 Number */}

@@ -1,15 +1,11 @@
 import * as React from 'react'
-import {graphql, Link} from 'gatsby'
-import Content from '../../components/content'
+import { graphql, Link } from 'gatsby'
 import Seo from '../../components/seo'
-import HeaderNav from '../../components/headerNav'
 import Footer from '../../components/footer'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const BlogsList = ({data}) => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-            <HeaderNav />
             <div className="container mx-auto px-4 py-16">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -54,12 +50,12 @@ const BlogsList = ({data}) => {
                                             
                                             {/* Title */}
                                             <h2 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors duration-200 line-clamp-2">
-                                                {node.frontmatter.title}
+                                                {node.frontmatter.title || node.frontmatter.slug}
                                             </h2>
                                             
                                             {/* Excerpt */}
                                             <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
-                                                {node.frontmatter.excerpt}
+                                                {node.frontmatter.excerpt || node.excerpt}
                                             </p>
                                             
                                             {/* Read More */}
@@ -96,22 +92,29 @@ const BlogsList = ({data}) => {
 }
 
 export const query = graphql`
-    query {
-      allMarkdownRemark(sort: { frontmatter: { date: DESC }}) {
-        nodes {
-          frontmatter {
-            date(formatString: "MMMM D, YYYY")
-            title
-            slug
-            excerpt
-            featuredImage
-          }
-          id
-          
+  query {
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: {
+        fileAbsolutePath: { regex: "//blogs//" }
+        rawMarkdownBody: { ne: "" }
+        frontmatter: { slug: { ne: null, regex: "/.+/" }, draft: { ne: true } }
+      }
+    ) {
+      nodes {
+        id
+        excerpt(pruneLength: 160)
+        frontmatter {
+          date(formatString: "MMMM D, YYYY")
+          title
+          slug
+          excerpt
+          featuredImage
         }
       }
     }
-  `
+  }
+`
 
 export const Head = () => <Seo title="My Blog Posts"/>
 export default BlogsList

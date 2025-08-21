@@ -1,3 +1,12 @@
+---
+slug: "how-https-works"
+date: "2024-10-14"
+title: "Algorithms learning notes"
+category: "CS"
+excerpt: "Algorithms learning"
+featuredImage: "../images/cookie-chrome-sqlite.png"
+---
+
 # Function flow of https
 ## Key things
 ### TLS Certificate
