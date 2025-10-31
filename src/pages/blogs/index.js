@@ -96,9 +96,9 @@ export const query = graphql`
     allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
       filter: {
-        fileAbsolutePath: { regex: "//blogs//" }
+        fileAbsolutePath: { regex: "/blogs/" }
         rawMarkdownBody: { ne: "" }
-        frontmatter: { slug: { ne: null, regex: "/.+/" }, draft: { ne: true } }
+        frontmatter: { slug: { ne: null, regex: "/.+/" } }
       }
     ) {
       nodes {
