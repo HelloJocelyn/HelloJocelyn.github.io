@@ -2,6 +2,7 @@ import * as React from 'react'
 import { graphql, Link } from 'gatsby'
 import Seo from '../../components/seo'
 import Footer from '../../components/footer'
+import PathBadge from '../../components/PathBadge'
 
 const BlogsList = ({data}) => {
     return (
@@ -38,6 +39,9 @@ const BlogsList = ({data}) => {
                                         
                                         {/* Content */}
                                         <div className="p-6">
+                                            <div className="mb-2">
+                                                <PathBadge fileAbsolutePath={node.fileAbsolutePath} />
+                                            </div>
                                             {/* Date */}
                                             <div className="flex items-center text-sm text-gray-500 mb-3">
                                                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -104,6 +108,7 @@ export const query = graphql`
       nodes {
         id
         excerpt(pruneLength: 160)
+        fileAbsolutePath
         frontmatter {
           date(formatString: "MMMM D, YYYY")
           title

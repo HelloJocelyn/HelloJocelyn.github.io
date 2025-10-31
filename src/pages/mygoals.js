@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Content from '../components/content'
 import Seo from "../components/seo"
 import Footer from '../components/footer'
+import paths from '../data/paths.json'
 
 const MyGoals = () => {
     const goals = [
@@ -55,6 +56,50 @@ const MyGoals = () => {
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         The milestones I'm working towards in my journey of life
                     </p>
+                </div>
+
+                {/* Learning Paths */}
+                <div className="max-w-5xl mx-auto mb-16 grid md:grid-cols-2 gap-6">
+                    {paths.map(p => (
+                        <section id={p.id} key={p.id} className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+                            <div className="flex items-start justify-between mb-4">
+                                <h2 className="text-2xl font-bold text-gray-800">{p.title}</h2>
+                                <span className="text-sm text-gray-600">{p.progressPercent}%</span>
+                            </div>
+                            <p className="text-gray-600 mb-4">{p.description}</p>
+                            <div className="mb-4">
+                                <h3 className="font-semibold text-gray-800 mb-2">Resources</h3>
+                                <ul className="list-disc list-inside space-y-1">
+                                    {p.resources.map(r => (
+                                        <li key={r.url}><a className="text-blue-600 hover:underline" href={r.url} target="_blank" rel="noreferrer">{r.title}</a></li>
+                                    ))}
+                                </ul>
+                            </div>
+                            {p.books?.length > 0 && (
+                                <div className="mb-4">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Books</h3>
+                                    <ul className="list-disc list-inside space-y-1">
+                                        {p.books.map(b => (
+                                            <li key={b.title}>{b.title}{b.author ? ` — ${b.author}` : ''}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                            {p.milestones?.length > 0 && (
+                                <div className="mb-2">
+                                    <h3 className="font-semibold text-gray-800 mb-2">Milestones</h3>
+                                    <ul className="space-y-1">
+                                        {p.milestones.map((m, idx) => (
+                                            <li key={idx} className="flex items-center justify-between text-sm">
+                                                <span className="text-gray-700">{m.title}</span>
+                                                <span className="text-gray-500 capitalize">{m.status}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                        </section>
+                    ))}
                 </div>
 
                 {/* Goals Grid */}
