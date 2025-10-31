@@ -30,3 +30,4 @@ featuredImage: "../images/cookie-chrome-sqlite.png"
 AbstractRefreshableApplicationContext的beanFactory
 
 ## 活跃性与性能
+锁的类型
