@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 // const card = document.querySelector('.card')
 // const yRange = [-90, 90]
 // const xRange = [-90, 90]
@@ -82,7 +81,7 @@ function animate() {
 }
 
 animate()
-=======
+
 const card = document.querySelector('.card');
 const yRange = [-10, 10]
 const xRange = [-10, 10]
@@ -99,4 +98,3 @@ card.onmousemove = e => {
     card.style.setProperty('--rx',`${rx}deg`)
     card.style.setProperty('--ry',`${ry}deg`)
 }
->>>>>>> Stashed changes
