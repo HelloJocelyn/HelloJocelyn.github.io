@@ -1,3 +1,11 @@
+---
+slug: "PN-junction"
+date: "2024-12-11"
+title: "PN Junction"
+category: "EE"
+excerpt: "PN Junction"
+featuredImage: ""
+---
 # PN
 
 ## what is PN
