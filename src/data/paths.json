@@ -1,0 +1,63 @@
+[
+  {
+    "id": "backend-architect",
+    "title": "Backend Architect",
+    "description": "System design, scalability, JVM, distributed systems.",
+    "progressPercent": 35,
+    "resources": [
+      { "title": "Designing Data-Intensive Applications", "url": "https://dataintensive.net/" },
+      { "title": "System Design Primer", "url": "https://github.com/donnemartin/system-design-primer" }
+    ],
+    "books": [
+      { "title": "Clean Architecture", "author": "Robert C. Martin" }
+    ],
+    "milestones": [
+      { "title": "Event-driven architecture review", "status": "in-progress" },
+      { "title": "CAP and consistency models", "status": "completed" }
+    ]
+  },
+  {
+    "id": "quantum-computing",
+    "title": "Quantum Computing",
+    "description": "Quantum mechanics, algorithms, and tooling.",
+    "progressPercent": 20,
+    "resources": [
+      { "title": "Qiskit Textbook", "url": "https://qiskit.org/textbook/" }
+    ],
+    "books": [
+      { "title": "Quantum Computation and Quantum Information", "author": "Nielsen, Chuang" }
+    ],
+    "milestones": [
+      { "title": "Solve basic circuit simulations", "status": "not-started" }
+    ]
+  },
+  {
+    "id": "frontend-learning",
+    "title": "Frontend Learning",
+    "description": "Modern React, performance, CSS, browser internals.",
+    "progressPercent": 50,
+    "resources": [
+      { "title": "React Docs", "url": "https://react.dev/" },
+      { "title": "Browser internals", "url": "https://developers.google.com/web" }
+    ],
+    "books": [],
+    "milestones": [
+      { "title": "Build interactive components", "status": "in-progress" }
+    ]
+  },
+  {
+    "id": "economy-learning",
+    "title": "Economy Learning",
+    "description": "Macroeconomics, markets, financial history.",
+    "progressPercent": 15,
+    "resources": [
+      { "title": "Investopedia", "url": "https://www.investopedia.com/" }
+    ],
+    "books": [],
+    "milestones": [
+      { "title": "GDP metrics study", "status": "not-started" }
+    ]
+  }
+]
+
+
